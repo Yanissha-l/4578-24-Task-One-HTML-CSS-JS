@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div>
+            <h3>You can enter just positive integer number</h1>
+                <form>
+                    <label for="rib_a">Rib A</label>
+                    <input type="text" name="rib_a" id="rib_a">
+                    <label for="rib_b">Rib B</label>
+                    <input type="text" name="rib_b" id="rib_b">
+                    <label for="point_x">X (from 0 up to 300)</label>
+                    <input type="text" name="point_x" id="point_x">
+                    <label for="point_y">Y ( from 0 up to 150)</label>
+                    <input type="text" name="point_y" id="point_y">
+                    <label for="square" id="square">Square area:</label>
+                    <input type="submit" value="draw" name="draw" class="btn btn-primary">
+                </form>
+        </div>
+        <div class="canvas-obj">
+            <h3>Drowing On Canvas!</h3>
+            <canvas class="myCanvas" onclick="drawByClick(event)"></canvas>
+            <button type="submit" class="btn btn-success clear">Clear</button>
+        </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
